@@ -1,0 +1,62 @@
+{
+  "name": "@vallum/svelte",
+  "version": "0.1.0",
+  "description": "Svelte 5 bindings for the Vallum browser client",
+  "type": "module",
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && vitest run src",
+    "prepack": "npm run build && node ../../scripts/prepare-package-license.mjs .",
+    "postpack": "node ../../scripts/cleanup-package-license.mjs ."
+  },
+  "dependencies": {
+    "@vallum/client": "^0.1.0"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "devDependencies": {
+    "svelte": "^5.56.8",
+    "typescript": "^5.9.2",
+    "vitest": "^4.1.10"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vallum-proxy/vallum.git",
+    "directory": "packages/vallum-svelte"
+  },
+  "homepage": "https://github.com/vallum-proxy/vallum#readme",
+  "bugs": {
+    "url": "https://github.com/vallum-proxy/vallum/issues"
+  },
+  "keywords": [
+    "vallum",
+    "svelte",
+    "svelte5",
+    "browser-sdk",
+    "security"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
