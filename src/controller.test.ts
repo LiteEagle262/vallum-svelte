@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import type { VallumClient } from "@vallum/client";
+import type { VallumClient } from "@liteeagle226/client";
 import { createVallumController } from "./controller.js";
 
 describe("createVallumController", () => {

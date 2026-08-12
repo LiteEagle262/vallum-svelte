@@ -1,6 +1,6 @@
-# `@vallum/svelte`
+# `@liteeagle226/svelte`
 
-Svelte 5 bindings for `@vallum/client`. The package provides a readable
+Svelte 5 bindings for `@liteeagle226/client`. The package provides a readable
 lifecycle controller, component context helpers, a stable protected-fetch
 function, and an opt-in action for render-only values.
 
@@ -11,11 +11,11 @@ stays `idle` on the server and starts after browser hydration.
 ## Install
 
 ```sh
-npm install @vallum/client @vallum/svelte svelte
+npm install @liteeagle226/client @liteeagle226/svelte svelte
 ```
 
-`@vallum/svelte` supports Svelte 5. Your application still needs the
-same-origin, authenticated admission broker required by `@vallum/client`.
+`@liteeagle226/svelte` supports Svelte 5. Your application still needs the
+same-origin, authenticated admission broker required by `@liteeagle226/client`.
 
 ## Provide once
 
@@ -25,7 +25,7 @@ is destroyed.
 
 ```svelte
 <script lang="ts">
-  import { provideVallum } from "@vallum/svelte";
+  import { provideVallum } from "@liteeagle226/svelte";
 
   let { children } = $props();
 
@@ -42,7 +42,7 @@ store contract, so `$vallum` is reactive.
 
 ```svelte
 <script lang="ts">
-  import { getVallumContext } from "@vallum/svelte";
+  import { getVallumContext } from "@liteeagle226/svelte";
 
   const vallum = getVallumContext();
 
@@ -77,7 +77,7 @@ them into an explicitly selected host with the action factory:
   import {
     createVallumRenderAction,
     getVallumContext,
-  } from "@vallum/svelte";
+  } from "@liteeagle226/svelte";
 
   let { protectedValue } = $props();
   const vallum = getVallumContext();
@@ -115,7 +115,7 @@ tree; without one, the client uses a generic “protected value” label.
 ## Package checks
 
 ```sh
-npm run build -w @vallum/svelte
-npm run test -w @vallum/svelte
-npm pack -w @vallum/svelte --dry-run
+npm run build -w @liteeagle226/svelte
+npm run test -w @liteeagle226/svelte
+npm pack -w @liteeagle226/svelte --dry-run
 ```

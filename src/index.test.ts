@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import type { MountOptions, VallumClient } from "@vallum/client";
+import type { MountOptions, VallumClient } from "@liteeagle226/client";
 import { createVallumController } from "./controller.js";
 import {
   createVallumRenderAction,

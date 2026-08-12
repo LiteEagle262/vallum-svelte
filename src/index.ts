@@ -1,5 +1,5 @@
 import { getContext, onDestroy, setContext } from "svelte";
-import type { MountOptions } from "@vallum/client";
+import type { MountOptions } from "@liteeagle226/client";
 import type { Action } from "svelte/action";
 import {
   createVallumController,
@@ -15,7 +15,7 @@ export type {
   VallumSvelteOptions,
 } from "./controller.js";
 
-const VALLUM_CONTEXT = Symbol.for("@vallum/svelte/context");
+const VALLUM_CONTEXT = Symbol.for("@liteeagle226/svelte/context");
 
 /** Create a readable Vallum lifecycle controller without installing context. */
 export function createVallum(options: VallumSvelteOptions): VallumController {

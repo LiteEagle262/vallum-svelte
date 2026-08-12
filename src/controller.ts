@@ -1,5 +1,5 @@
-import { createVallumClient } from "@vallum/client";
-import type { VallumClient, VallumClientOptions } from "@vallum/client";
+import { createVallumClient } from "@liteeagle226/client";
+import type { VallumClient, VallumClientOptions } from "@liteeagle226/client";
 
 type Subscriber<T> = (value: T) => void;
 type Unsubscriber = () => void;
@@ -187,7 +187,7 @@ function isBrowserEnvironment(): boolean {
 }
 
 function releaseClient(client: VallumClient): void {
-  // destroy() was added to @vallum/client as part of the framework-adapter
+  // destroy() was added to @liteeagle226/client as part of the framework-adapter
   // lifecycle. The optional check also keeps this adapter compatible with the
   // earliest 0.1 prerelease builds.
   (client as VallumClient & { destroy?: () => void }).destroy?.();
