@@ -1,6 +1,6 @@
 {
   "name": "@liteeagle226/svelte",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Svelte 5 bindings for the Vallum browser client",
   "type": "module",
   "license": "Apache-2.0",
@@ -26,7 +26,7 @@
     "postpack": "node ../../scripts/cleanup-package-license.mjs ."
   },
   "dependencies": {
-    "@liteeagle226/client": "^0.1.0"
+    "@liteeagle226/client": "^0.1.1"
   },
   "peerDependencies": {
     "svelte": "^5.0.0"

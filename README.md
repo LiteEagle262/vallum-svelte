@@ -14,6 +14,10 @@ stays `idle` on the server and starts after browser hydration.
 npm install @liteeagle226/client @liteeagle226/svelte svelte
 ```
 
+The adapter installs the core client automatically; it is listed explicitly to
+show the runtime pair. Install `@liteeagle226/admission` in the trusted backend
+that issues grants.
+
 `@liteeagle226/svelte` supports Svelte 5. Your application still needs the
 same-origin, authenticated admission broker required by `@liteeagle226/client`.
 
