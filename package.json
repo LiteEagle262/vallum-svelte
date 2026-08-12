@@ -42,12 +42,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vallum-proxy/vallum.git",
-    "directory": "packages/vallum-svelte"
+    "url": "git+https://github.com/LiteEagle262/vallum-svelte.git"
   },
-  "homepage": "https://github.com/vallum-proxy/vallum#readme",
+  "homepage": "https://github.com/LiteEagle262/vallum-svelte#readme",
   "bugs": {
-    "url": "https://github.com/vallum-proxy/vallum/issues"
+    "url": "https://github.com/LiteEagle262/vallum-svelte/issues"
   },
   "keywords": [
     "vallum",
